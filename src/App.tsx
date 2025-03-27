@@ -1,4 +1,4 @@
-import React from 'react';
+// Code for the main App component
 import SortCentric from './components/SortCentric';
 
 function App() {

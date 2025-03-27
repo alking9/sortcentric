@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+# SortCentric
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**SortCentric** is a responsive, interactive sorting algorithm visualizer built with React and TypeScript. It highlights each step of the sorting process in real-time, allowing users to observe and compare the inner workings of algorithms like Bubble Sort, Merge Sort, and Quick Sort.
 
-Currently, two official plugins are available:
+This project was built as a way to sharpen my front-end skills, apply fundamental algorithms in a visual context, and demonstrate clean architecture with full modularity. It's lightweight, intuitive, and something I'm proud of sharing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Check it out here: [https://sortcentric.vercel.app](https://sortcentric.vercel.app)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## What It Does
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+SortCentric lets you:
+- Select a sorting algorithm from a dropdown menu
+- Generate a randomized array
+- Start, stop, and resume the sorting animation
+- Watch comparisons, swaps, and merges happen step by step
+- See time complexity details for each algorithm
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+All animations are powered by custom-built sorting logic using a `SortStep` type structure to track each operation accurately.
+
+---
+
+## Algorithms Implemented
+
+| Algorithm   | Time Complexity |
+|-------------|-----------------|
+| Bubble Sort | O(n²)           |
+| Merge Sort  | O(n log n)      |
+| Quick Sort  | O(n log n)      |
+
+Each one was implemented from scratch and animated frame-by-frame with precise tracking of active indices and array states.
+
+---
+
+## Technologies
+
+- React + TypeScript
+- Vite
+- CSS-in-JS for modular styling
+- Deployed via Vercel
+
+---
+## Running Locally
+```bash
+git clone https://github.com/alking9/sortcentric.git
+cd sortcentric

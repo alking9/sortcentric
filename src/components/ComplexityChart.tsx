@@ -1,5 +1,4 @@
-import React from 'react';
-
+// Code for ComplexityChart component
 const complexityMap: Record<string, string> = {
   'Bubble Sort': 'O(n²)',
   'Merge Sort': 'O(n log n)',
