@@ -1,4 +1,12 @@
 # SortCentric
+# SortCentric
+
+![Vercel](https://img.shields.io/badge/Live-Vercel-black?logo=vercel)
+![React](https://img.shields.io/badge/Framework-React-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?logo=typescript)
+![License](https://img.shields.io/github/license/alking9/sortcentric)
+
+
 
 **SortCentric** is a responsive, interactive sorting algorithm visualizer built with React and TypeScript. It highlights each step of the sorting process in real-time, allowing users to observe and compare the inner workings of algorithms like Bubble Sort, Merge Sort, and Quick Sort.
 
